@@ -2,12 +2,12 @@
 
 int main(void)
 {
-	char ch ='z';
-	while(ch >= 'a')
+	char (ch = 'z');
+	while (ch >= 'a')
 	{
-		putchar(ch);
+		putchar (ch);
 		ch--;
 	}
-	putchar('\n');
-	return 0;
+	putchar ('\n');
+	return (0);
 }
