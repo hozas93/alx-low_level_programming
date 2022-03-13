@@ -1,49 +1,28 @@
 #include <stdio.h>
-
+/**
+ * main - Program entry point
+ *
+ * Return: 0 on success. Error code otherwise
+ */
 int main(void)
 {
-    char ch = 'a';
-	while(ch <= 'z')
+	char a = 'a';
+	char A = 'A';
+	int n = 0;
+
+	while (n < 52)
 	{
-		if (ch != 'e' && ch != 'q')
+		if (n < 26)
 		{
-			putchar(ch);
-		}
-		ch++;
-	}
-	putchar('\n');
-
-    return 0;
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-    
-	for (char ch = 'a'; ch <= 'z'; ch++)
-	{
-		if (ch != 'e' && ch != 'q')
+			putchar(a);
+			a++;
+		} else
 		{
-			putchar(ch);
+			putchar(A);
+			A++;
 		}
+		n++;
 	}
 	putchar('\n');
-
-    return 0;
-}
-
-int main(void)
-{
-    
-	for (char ch ='a'; ch <= 'z'; ch++)
-	{
-		if (ch == 'e' || ch == 'q')
-		    ch++;
-		putchar(ch);
-		
-	}
-	putchar('\n');
-
-    return 0;
+	return (0);
 }
