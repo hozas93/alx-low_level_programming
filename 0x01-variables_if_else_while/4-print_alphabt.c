@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-int main(void)/* Printing alphabets without */
+/**
+ * main - Printing the alphabet
+ *
+ * Return: Always 0 (Success)
+ */
+
+/* main function is void */
+int main(void)
 {
 	for (char ch = 'a'; ch <= 'z'; ch++)
 	{
