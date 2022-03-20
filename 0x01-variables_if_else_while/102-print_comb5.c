@@ -15,12 +15,18 @@ int main(void)
 
 		for (j = i + 1; j <= 9; j++)
 		{
-			putchar(i + '0');
-			putchar(j + '0');
-			if ((i * j) < 81)
+			int k;
+
+			for (k = j + 1; k <= 9; k++)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				if (((i * 100) + (j * 10) + k) < 789)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
