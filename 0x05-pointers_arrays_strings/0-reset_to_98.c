@@ -3,7 +3,10 @@
 
 /**
  * reset_to_98 - takes pointer to an int
- *
- * Return: Always 0
+ *@n: input integer
+ * Return: No return
  */
-int main(void)
+void reset_to_98(int *n)
+{
+	*n = 98;
+}
