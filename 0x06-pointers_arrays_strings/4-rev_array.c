@@ -2,7 +2,20 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * reverse_array - reverses the content of an array
+ * @a: an array of intergers
+ * @n:the number of elements to swap
  *
- * Return: Always 0 (Success)
  */
+void reverse_array(int *a, int n)
+{
+	int i, j, k;
+
+	j = n - 1;
+	for (i = 0; i < n / 2; i++)
+	{
+		k = a[i];
+		a[i] = a[j];
+		a[j--] = k;
+	}
+}
