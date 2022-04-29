@@ -1,2 +1,2 @@
 #!/bin/bash
-This read me is for more singly lists
+This README is for more linked lists
